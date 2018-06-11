@@ -1,0 +1,182 @@
+{
+  "timeslots": [
+    "13:00",
+    "13:40",
+    "14:00",
+    "14:15",
+    "15:30",
+    "16:00",
+    "16:30",
+    "17:00",
+    "17:30"
+  ],
+  "rooms": {
+    "1": {
+      "type": "ACADEMIC",
+      "events": {
+        "13:00": {
+          "title": "Eröffnung und Grußwort",
+          "details": [
+            "Prof. Dr. rer. nat. habil. Uwe Aßmann (Dekan der Fakultät Informatik)",
+            "Staatssekretär Uwe Gaul (Sächsisches Staatsministerium für Wissenschaft und Kunst)",
+            "Prof. Hans Müller-Steinhagen (Rektor Technische Universität Dresden)",
+            "Prof. Rainer Groh (Professur für Mediengestaltung)"
+          ]
+        },
+        "13:40": {
+          "title": "Preisverleihung",
+          "details": [
+            "SAP-Dissertationspreis",
+            "Carl Zeiss Diplompreis für Informatik",
+            "Amazon-Preis für eine herausragende Abschlussarbeit 3m5 Excellence Award für eine herausragende Dissertation"
+          ]
+        },
+        "14:00": {
+          "title": "Informationen OUTPUT App",
+          "details": [
+            "Dr. Thomas Springer"
+          ]
+        },
+        "14:15": {
+          "title": "Gastvortrag Prof. Dr. Norbert Knoll",
+          "details": [
+            "Gründungsdirektor des DLR Institut für Softwaremethoden zur Produkt-Virtualisierung",
+            "Das Digitale Flugzeug – Herausforderungen für die Informatik"
+          ]
+        },
+        "15:30": {
+          "title": "Professorenführung",
+          "details": [
+            "Prof. Rainer Groh"
+          ]
+        },
+        "16:00": {
+          "title": "Zeugnisverleihung des SRZ",
+          "details": [
+            "Dr. Sven Hofmann"
+          ]
+        },
+        "17:00": {
+          "title": "MixedReality in Action",
+          "details": [
+            "Marc Plogas",
+            "Microsoft Student Partners"
+          ]
+        }
+      }
+    },
+    "5": {
+      "type": "LECTURE",
+      "events": {
+        "15:30": {
+          "title": "Prognosen für Erneuerbare Energien",
+          "details": [
+            "Robert Ulbricht",
+            "Robotron Datenbank-Software GmbH"
+          ]
+        },
+        "16:00": {
+          "title": "deecoob insight – An Intelligent Market Monitoring Platform",
+          "details": [
+            "Michael Schuster, Christian Schwarz",
+            "deecoob Technology GmbH"
+          ]
+        },
+        "16:30": {
+          "title": "Hassle-free Kubernetes on OpenStack",
+          "details": [
+            "Daniel Trautmann, Matthias Goerens",
+            "CLOUD&HEAT Technologies GmbH"
+          ]
+        },
+        "17:00": {
+          "title": "Preh Car Connect – Guiding the Future",
+          "details": [
+            "Dr. Mathias Haberjahn",
+            "Preh Car Connect GmbH"
+          ]
+        },
+        "17:30": {
+          "title": "Vom manuellen Test zum Continuous Deployment – Chance oder Risiko?",
+          "details": [
+            "Steffen Carl, Gösta Samulski",
+            "Sächsische AufbauBank – Förderbank"
+          ]
+        }
+      }
+    },
+    "6": {
+      "type": "LECTURE",
+      "events": {
+        "15:30": {
+          "title": "DeltaHochDrei - Lernt das Software- inkubationsprogramm der TUD und Startups kennen",
+          "details": [
+            "Katrin Kahle",
+            "Dresden Exists"
+          ]
+        },
+        "16:00": {
+          "title": "Refactoring to Agile",
+          "details": [
+            "Sebastian Flügge",
+            "Ferchau GmbH"
+          ]
+        },
+        "16:30": {
+          "title": "Wie realisiert die ZEDAS GmbH ihre Softwareprodukte?",
+          "details": [
+            "Henrik Hoffmann",
+            "ZEDAS GmbH"
+          ]
+        },
+        "17:00": {
+          "title": "Mobilität von morgen – autonom, vernetzt, elektrisch",
+          "details": [
+            "Sebastian Pretzsch",
+            "Fraunhofer IVI"
+          ]
+        },
+        "17:30": {
+          "title": "Web Accessibility – Barrierefreiheit als wichtiger Bestandteil der Usability von Web-Anwendungen",
+          "details": [
+            "Philipp Michael, Bianca Zimmer",
+            "XIMA MEDIA GmbH"
+          ]
+        }
+      }
+    },
+    "7": {
+      "type": "LECTURE",
+      "events": {
+        "15:30": {
+          "title": "Graphicuss",
+          "details": [
+            "Tenshi Hara",
+            "Professur für Rechnernetze"
+          ]
+        },
+        "16:00": {
+          "title": "Role-based Software Infrastructures",
+          "details": [
+            "Thomas Kühn",
+            "Lehrstuhl für Softwaretechnologie"
+          ]
+        },
+        "16:30": {
+          "title": "Wordpress 5.0 und Gutenberg",
+          "details": [
+            "Filip Pižl",
+            "Professur für Mediengestaltung"
+          ]
+        },
+        "17:00": {
+          "title": "How to Diss? Effectively and Efficiently",
+          "details": [
+            "Thomas Kühn",
+            "Lehrstuhl für Softwaretechnologie"
+          ]
+        }
+      }
+    }
+  }
+}
