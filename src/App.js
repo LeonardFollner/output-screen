@@ -4,6 +4,14 @@ import events from './data/events';
 import logo from './logo.svg';
 
 class App extends Component {
+    constructor(props) {
+        window.setInterval(() => {
+            this.forceUpdate();
+        }, 60 * 1000);
+
+        super(props);
+    }
+
     render() {
         const date = new Date();
         const currentHour = date.getHours();
@@ -16,7 +24,6 @@ class App extends Component {
                         <img src={logo} className="logo"/>
                         <p>Get connected</p>
                     </div>
-                    {/* <div className="clock">{currentHour}:{currentMinute}</div> */}
                     <div className="clock">{
                         ("0" + currentHour).slice(-2) + ":" +
                         ("0" + currentMinute).slice(-2)}</div>
