@@ -1,32 +1,82 @@
-.App {
-    text-align: center;
+* {
+    font-family: "Univers", sans-serif;
+    box-sizing: border-box;
 }
 
-.App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 80px;
+body {
+    padding: 0;
+    font-size: 16px;
 }
 
-.App-header {
-    background-color: #222;
-    height: 150px;
-    padding: 20px;
+header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    font-size: 3rem;
+    padding: 18px;
+}
+
+header p {
+    margin: 0;
+}
+
+.clock {
+    font-size: 14.5rem;
+}
+
+.academic {
+    background-color: #FFCC00;
+}
+
+.lecture {
+    background-color: #97BF0D;
+}
+
+.live {
+    background-color: #008BD0;
+}
+
+.logo {
+    height: 250px;
+}
+
+.roomNr {
     color: white;
+    font-weight: bolder;
+    font-size: 8rem;
+    text-align: center;
+
+    height: 300px;
+    margin: 9px;
+
+    background-size: 16rem;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.App-title {
-    font-size: 1.5em;
+.roomNr--academic {
+    background-image: url("room--academic.svg");
 }
 
-.App-intro {
-    font-size: large;
+.roomNr--lecture {
+    background-image: url("room--lecture.svg");
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid black;
+}
+
+td {
+    padding: 9px;
+    width: 25%;
+}
+
+td:first-of-type {
+    width: 60px;
 }
