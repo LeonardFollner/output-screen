@@ -20,13 +20,14 @@ class App extends Component {
         return (
             <div>
                 <header>
+                    <div className="clock">{
+                        ("0" + currentHour).slice(-2) + ":" +
+                        ("0" + currentMinute).slice(-2)}
+                    </div>
                     <div>
                         <img src={logo} className="logo"/>
                         <p>Get connected</p>
                     </div>
-                    <div className="clock">{
-                        ("0" + currentHour).slice(-2) + ":" +
-                        ("0" + currentMinute).slice(-2)}</div>
                 </header>
                 <main>
                     <table>
