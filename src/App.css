@@ -25,16 +25,32 @@ header p {
     font-size: 14.5rem;
 }
 
-.academic {
+tbody tr:first-of-type td, tbody tr:last-of-type td {
+    color: black;
+}
+
+tr:first-of-type td.academic, tr:last-of-type td.academic {
     background-color: #FFCC00;
 }
 
-.lecture {
+tr:first-of-type td.lecture, tr:last-of-type td.lecture {
     background-color: #97BF0D;
 }
 
-.live {
+tr:first-of-type td.live, tr:last-of-type td.live {
     background-color: #008BD0;
+}
+
+td.academic {
+    color: #FFCC00;
+}
+
+td.lecture {
+    color: #97BF0D;
+}
+
+td.live {
+    color: #008BD0;
 }
 
 .logo {
