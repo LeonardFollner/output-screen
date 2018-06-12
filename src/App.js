@@ -14,7 +14,7 @@ class App extends Component {
 
     render() {
         const date = new Date();
-        const currentHour = date.getHours();
+        const currentHour = 15;//date.getHours();
         const currentMinute = date.getMinutes();
 
         return (

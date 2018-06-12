@@ -4,7 +4,7 @@
 }
 
 body {
-    padding: 0;
+    padding: 40px;
     font-size: 16px;
 }
 
@@ -42,15 +42,24 @@ tr:first-of-type td.live, tr:last-of-type td.live {
 }
 
 td.academic {
-    color: #FFCC00;
+    background-color: rgba(255, 204, 0, 0.45);
 }
 
 td.lecture {
-    color: #97BF0D;
+    background-color: rgba(151, 191, 13, 0.45);
 }
 
 td.live {
-    color: #008BD0;
+    background-color: rgba(0, 139, 208, 0.45);
+}
+
+td {
+    border-right: 20px solid white;
+}
+
+td:first-of-type {
+    padding: 27px;
+    font-size: 3rem;
 }
 
 .logo {
@@ -89,7 +98,7 @@ tr {
 }
 
 td {
-    padding: 9px;
+    padding: 20px 40px;
     width: 25%;
 }
 
