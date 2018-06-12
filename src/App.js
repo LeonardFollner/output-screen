@@ -24,9 +24,9 @@ class App extends Component {
                         ("0" + currentHour).slice(-2) + ":" +
                         ("0" + currentMinute).slice(-2)}
                     </div>
+                    <p>get . connected</p>
                     <div>
                         <img src={logo} className="logo"/>
-                        <p>Get connected</p>
                     </div>
                 </header>
                 <main>
