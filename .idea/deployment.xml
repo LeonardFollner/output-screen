@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="leonardfollner.de">
+    <serverData>
+      <paths name="leonardfollner.de">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/output-screen" local="$PROJECT_DIR$/build" web="/output-screen" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
