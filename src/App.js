@@ -24,7 +24,7 @@ class App extends Component {
                         ("0" + currentHour).slice(-2) + ":" +
                         ("0" + currentMinute).slice(-2)}
                     </div>
-                    <p>get . connected</p>
+                    <p>get connected</p>
                     <div>
                         <img src={logo} className="logo"/>
                     </div>
@@ -47,23 +47,20 @@ class App extends Component {
                             // if (currentHour + 2 >= eventHour) {
 
                             const nextTimeSlot = events.timeslots[timeIndex + 1];
-                            let nextHour;
 
-                            let nextMinute;
                             if (nextTimeSlot) {
-                                nextHour = parseInt(nextTimeSlot.split(':')[0]);
-                                nextMinute = parseInt(nextTimeSlot.split(':')[1]);
+                                const nextHour = parseInt(nextTimeSlot.split(':')[0]);
+                                const nextMinute = parseInt(nextTimeSlot.split(':')[1]);
 
+                                if (
+                                    // current hour and next event in current hour has started
+                                    eventHour === currentHour &&
+                                    nextHour === currentHour &&
+                                    nextMinute <= currentMinute
+                                ) {
+                                    return ""
+                                }
                             }
-
-                            if (nextMinute && nextHour && // current hour and next event in current hour has started
-                                eventHour === currentHour &&
-                                nextHour === currentHour &&
-                                nextMinute <= currentMinute
-                            ) {
-                                return ""
-                            }
-
                             if (eventHour >= currentHour) {
                                 /* const numberOfEventsAtThisTime = Object.values(events.rooms).reduce((eventCounter, room) => {
                                     Object.keys(room.events).forEach((event) => {
