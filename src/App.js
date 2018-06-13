@@ -64,14 +64,6 @@ class App extends Component {
                             }
                             if (eventHour >= currentHour
                                 || nextHour > currentHour || (nextHour === currentHour && nextMinute > currentMinute)) {
-                                /* const numberOfEventsAtThisTime = Object.values(events.rooms).reduce((eventCounter, room) => {
-                                    Object.keys(room.events).forEach((event) => {
-                                        if (event === time) {
-                                            eventCounter++;
-                                        }
-                                    });
-                                    return eventCounter;
-                                }, 0); */
 
                                 return (
                                     <TimeSlot time={time} rooms={events.rooms}/>

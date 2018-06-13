@@ -35,7 +35,8 @@
           "title": "Informationen OUTPUT App",
           "details": [
             "Dr. Thomas Springer"
-          ]
+          ],
+          "type": "LIVE"
         },
         "14:15": {
           "title": "Gastvortrag Prof. Dr. Norbert Knoll",
@@ -61,7 +62,8 @@
           "details": [
             "Marc Plogas",
             "Microsoft Student Partners"
-          ]
+          ],
+          "type": "LECTURE"
         }
       }
     },

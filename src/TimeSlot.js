@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Event from "./Event";
 
 class TimeSlot extends Component {
     render() {
@@ -10,15 +11,8 @@ class TimeSlot extends Component {
                     const event = this.props.rooms[roomNr].events[this.props.time];
                     if (event) {
                         return (
-                            <td key={roomNr} colSpan={1}
-                                className={roomType.toLowerCase()}>
-                                <h2>{event.title}</h2>
-                                {event.details.map(detail => {
-                                    return (
-                                        <p key={detail}>{detail}</p>
-                                    )
-                                })}
-                            </td>
+                            <Event roomNr={roomNr} type={event.type ? event.type.toLowerCase() : roomType.toLowerCase()}
+                                   event={event}/>
                         )
                     } else {
                         return <td key={roomNr}/>
