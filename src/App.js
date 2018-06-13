@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import events from './data/events';
 import logo from './logo.svg';
+import TimeSlot from './TimeSlot';
 
 class App extends Component {
     constructor(props) {
@@ -42,7 +43,7 @@ class App extends Component {
                         </thead>
                         <tbody>
                         {events.timeslots.map((time, timeIndex) => {
-                                const eventHour = parseInt(time.split(':')[0]);
+                            const eventHour = parseInt(time.split(':')[0]);
                             const nextTimeSlot = events.timeslots[timeIndex + 1];
 
                             let nextHour;
@@ -73,28 +74,7 @@ class App extends Component {
                                 }, 0); */
 
                                 return (
-                                    <tr key={time}>
-                                        <td>{time}</td>
-                                        {Object.keys(events.rooms).map(roomNr => {
-                                            const roomType = events.rooms[roomNr].type;
-                                            const event = events.rooms[roomNr].events[time];
-                                            if (event) {
-                                                return (
-                                                    <td key={roomNr} colSpan={1}
-                                                        className={roomType.toLowerCase()}>
-                                                        <h2>{event.title}</h2>
-                                                        {event.details.map(detail => {
-                                                            return (
-                                                                <p key={detail}>{detail}</p>
-                                                            )
-                                                        })}
-                                                    </td>
-                                                )
-                                            } else {
-                                                return <td key={roomNr}/>
-                                            }
-                                        })}
-                                    </tr>
+                                    <TimeSlot time={time} rooms={events.rooms}/>
                                 )
                             }
                             }
